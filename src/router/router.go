@@ -24,5 +24,5 @@ func StartProject() {
 		c.JSON(404, gin.H{"code": "PAGE_NOT_FOUND", "message": "Page not found"})
 	})
 
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	r.Run(":9090") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
